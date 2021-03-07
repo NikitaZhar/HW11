@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		531A9FDC25F4DB7D0048E64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FDB25F4DB7D0048E64B /* AppDelegate.swift */; };
 		531A9FDE25F4DB7D0048E64B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FDD25F4DB7D0048E64B /* SceneDelegate.swift */; };
-		531A9FE025F4DB7D0048E64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FDF25F4DB7D0048E64B /* ViewController.swift */; };
 		531A9FE325F4DB7D0048E64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531A9FE125F4DB7D0048E64B /* Main.storyboard */; };
 		531A9FE525F4DB820048E64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531A9FE425F4DB820048E64B /* Assets.xcassets */; };
 		531A9FE825F4DB820048E64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531A9FE625F4DB820048E64B /* LaunchScreen.storyboard */; };
+		531A9FF325F4E1C90048E64B /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FF225F4E1C90048E64B /* InitViewController.swift */; };
+		531A9FF725F4E2240048E64B /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		531A9FD825F4DB7D0048E64B /* AudioDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531A9FDB25F4DB7D0048E64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		531A9FDD25F4DB7D0048E64B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		531A9FDF25F4DB7D0048E64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		531A9FE225F4DB7D0048E64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		531A9FE425F4DB820048E64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		531A9FE725F4DB820048E64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		531A9FE925F4DB820048E64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531A9FF225F4E1C90048E64B /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				531A9FDB25F4DB7D0048E64B /* AppDelegate.swift */,
 				531A9FDD25F4DB7D0048E64B /* SceneDelegate.swift */,
-				531A9FDF25F4DB7D0048E64B /* ViewController.swift */,
+				531A9FF225F4E1C90048E64B /* InitViewController.swift */,
+				531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */,
 				531A9FE125F4DB7D0048E64B /* Main.storyboard */,
 				531A9FE425F4DB820048E64B /* Assets.xcassets */,
 				531A9FE625F4DB820048E64B /* LaunchScreen.storyboard */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				531A9FE025F4DB7D0048E64B /* ViewController.swift in Sources */,
 				531A9FDC25F4DB7D0048E64B /* AppDelegate.swift in Sources */,
+				531A9FF725F4E2240048E64B /* TrackListTableViewController.swift in Sources */,
 				531A9FDE25F4DB7D0048E64B /* SceneDelegate.swift in Sources */,
+				531A9FF325F4E1C90048E64B /* InitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikitaZharinov.AudioDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikitaZharinov.AudioDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
