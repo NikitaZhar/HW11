@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB6231A3A6CC7296614C6F3 /* Pods_AudioDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85DF0C0AF251BE180B6AF20 /* Pods_AudioDB.framework */; };
 		531A9FDC25F4DB7D0048E64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FDB25F4DB7D0048E64B /* AppDelegate.swift */; };
 		531A9FDE25F4DB7D0048E64B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FDD25F4DB7D0048E64B /* SceneDelegate.swift */; };
 		531A9FE325F4DB7D0048E64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531A9FE125F4DB7D0048E64B /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		531A9FE825F4DB820048E64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531A9FE625F4DB820048E64B /* LaunchScreen.storyboard */; };
 		531A9FF325F4E1C90048E64B /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FF225F4E1C90048E64B /* InitViewController.swift */; };
 		531A9FF725F4E2240048E64B /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */; };
+		531A9FFE25F4E4260048E64B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A9FFD25F4E4260048E64B /* Model.swift */; };
+		531AA00225F4E48D0048E64B /* ConfigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AA00125F4E48D0048E64B /* ConfigureCell.swift */; };
+		531AA00525F4E5120048E64B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AA00425F4E5120048E64B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		531A9FE925F4DB820048E64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531A9FF225F4E1C90048E64B /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
 		531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
+		531A9FFD25F4E4260048E64B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		531AA00125F4E48D0048E64B /* ConfigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureCell.swift; sourceTree = "<group>"; };
+		531AA00425F4E5120048E64B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		569A5C6292D4FB57E27C6D33 /* Pods-AudioDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioDB.release.xcconfig"; path = "Target Support Files/Pods-AudioDB/Pods-AudioDB.release.xcconfig"; sourceTree = "<group>"; };
+		91148F132FFDBDCD3E5E19A2 /* Pods-AudioDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioDB.debug.xcconfig"; path = "Target Support Files/Pods-AudioDB/Pods-AudioDB.debug.xcconfig"; sourceTree = "<group>"; };
+		E85DF0C0AF251BE180B6AF20 /* Pods_AudioDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB6231A3A6CC7296614C6F3 /* Pods_AudioDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12924E833048F77BC9203A08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E85DF0C0AF251BE180B6AF20 /* Pods_AudioDB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46DC81E79CE74A9A7EFFEE28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91148F132FFDBDCD3E5E19A2 /* Pods-AudioDB.debug.xcconfig */,
+				569A5C6292D4FB57E27C6D33 /* Pods-AudioDB.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		531A9FCF25F4DB7D0048E64B = {
 			isa = PBXGroup;
 			children = (
 				531A9FDA25F4DB7D0048E64B /* AudioDB */,
 				531A9FD925F4DB7D0048E64B /* Products */,
+				46DC81E79CE74A9A7EFFEE28 /* Pods */,
+				12924E833048F77BC9203A08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +89,43 @@
 		531A9FDA25F4DB7D0048E64B /* AudioDB */ = {
 			isa = PBXGroup;
 			children = (
-				531A9FDB25F4DB7D0048E64B /* AppDelegate.swift */,
-				531A9FDD25F4DB7D0048E64B /* SceneDelegate.swift */,
-				531A9FF225F4E1C90048E64B /* InitViewController.swift */,
-				531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */,
-				531A9FE125F4DB7D0048E64B /* Main.storyboard */,
+				531A9FFB25F4E3890048E64B /* ViewControllers */,
+				531A9FFA25F4E3740048E64B /* Storyboards */,
 				531A9FE425F4DB820048E64B /* Assets.xcassets */,
-				531A9FE625F4DB820048E64B /* LaunchScreen.storyboard */,
-				531A9FE925F4DB820048E64B /* Info.plist */,
+				531A9FFC25F4E3A00048E64B /* SupportFiles */,
+				531A9FFD25F4E4260048E64B /* Model.swift */,
+				531AA00125F4E48D0048E64B /* ConfigureCell.swift */,
+				531AA00425F4E5120048E64B /* NetworkManager.swift */,
 			);
 			path = AudioDB;
+			sourceTree = "<group>";
+		};
+		531A9FFA25F4E3740048E64B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				531A9FE125F4DB7D0048E64B /* Main.storyboard */,
+				531A9FE625F4DB820048E64B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		531A9FFB25F4E3890048E64B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				531A9FF225F4E1C90048E64B /* InitViewController.swift */,
+				531A9FF625F4E2240048E64B /* TrackListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		531A9FFC25F4E3A00048E64B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				531A9FDB25F4DB7D0048E64B /* AppDelegate.swift */,
+				531A9FDD25F4DB7D0048E64B /* SceneDelegate.swift */,
+				531A9FE925F4DB820048E64B /* Info.plist */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 531A9FEC25F4DB820048E64B /* Build configuration list for PBXNativeTarget "AudioDB" */;
 			buildPhases = (
+				12B96F5694C8F22FF12E46B9 /* [CP] Check Pods Manifest.lock */,
 				531A9FD425F4DB7D0048E64B /* Sources */,
 				531A9FD525F4DB7D0048E64B /* Frameworks */,
 				531A9FD625F4DB7D0048E64B /* Resources */,
+				E6359E8A4655FC7DE761A30B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,14 +195,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12B96F5694C8F22FF12E46B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6359E8A4655FC7DE761A30B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioDB/Pods-AudioDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioDB/Pods-AudioDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioDB/Pods-AudioDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		531A9FD425F4DB7D0048E64B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531A9FFE25F4E4260048E64B /* Model.swift in Sources */,
 				531A9FDC25F4DB7D0048E64B /* AppDelegate.swift in Sources */,
 				531A9FF725F4E2240048E64B /* TrackListTableViewController.swift in Sources */,
+				531AA00525F4E5120048E64B /* NetworkManager.swift in Sources */,
 				531A9FDE25F4DB7D0048E64B /* SceneDelegate.swift in Sources */,
+				531AA00225F4E48D0048E64B /* ConfigureCell.swift in Sources */,
 				531A9FF325F4E1C90048E64B /* InitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +392,13 @@
 		};
 		531A9FED25F4DB820048E64B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91148F132FFDBDCD3E5E19A2 /* Pods-AudioDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46GSK847SZ;
-				INFOPLIST_FILE = AudioDB/Info.plist;
+				INFOPLIST_FILE = AudioDB/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +412,13 @@
 		};
 		531A9FEE25F4DB820048E64B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569A5C6292D4FB57E27C6D33 /* Pods-AudioDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46GSK847SZ;
-				INFOPLIST_FILE = AudioDB/Info.plist;
+				INFOPLIST_FILE = AudioDB/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
