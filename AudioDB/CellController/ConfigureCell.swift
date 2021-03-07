@@ -12,7 +12,7 @@ class ConfigureCell: UITableViewCell {
     @IBOutlet var trackTambImage: UIImageView!
     @IBOutlet var trackLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
-    @IBOutlet var albomLabel: UILabel!
+//    @IBOutlet var albomLabel: UILabel!
     
     func configure(with track: LovedTrack) {
         trackLabel.text = track.strTrack

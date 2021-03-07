@@ -31,6 +31,9 @@
                                 <state key="normal" title="Tap to get List Tracks">
                                     <color key="titleColor" red="0.66004284566981131" green="0.70478600946623615" blue="0.87392692158139995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTx-Vq-CQp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="dsf-6w-phx" customClass="ConfigureCell" customModule="AudioDB" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="70" id="dsf-6w-phx" customClass="ConfigureCell" customModule="AudioDB" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dsf-6w-phx" id="oYG-Gm-cSx">
@@ -103,6 +106,11 @@
                                         <constraint firstAttribute="trailing" secondItem="3d2-9X-oPI" secondAttribute="trailing" constant="16" id="yDc-qi-ldf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artistLabel" destination="rGz-7W-3PJ" id="hxO-nw-wtP"/>
+                                    <outlet property="trackLabel" destination="BAL-Pf-y9U" id="lou-30-ycr"/>
+                                    <outlet property="trackTambImage" destination="kGb-uc-Fz8" id="bFQ-3A-sjF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

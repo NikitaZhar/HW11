@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,7 +64,6 @@
 				91148F132FFDBDCD3E5E19A2 /* Pods-AudioDB.debug.xcconfig */,
 				569A5C6292D4FB57E27C6D33 /* Pods-AudioDB.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,11 +90,11 @@
 			children = (
 				531A9FFB25F4E3890048E64B /* ViewControllers */,
 				531A9FFA25F4E3740048E64B /* Storyboards */,
+				531AA00E25F4EBAB0048E64B /* Model */,
+				531AA00B25F4EB740048E64B /* CellController */,
+				531AA00C25F4EB9B0048E64B /* NetworkManager */,
 				531A9FE425F4DB820048E64B /* Assets.xcassets */,
 				531A9FFC25F4E3A00048E64B /* SupportFiles */,
-				531A9FFD25F4E4260048E64B /* Model.swift */,
-				531AA00125F4E48D0048E64B /* ConfigureCell.swift */,
-				531AA00425F4E5120048E64B /* NetworkManager.swift */,
 			);
 			path = AudioDB;
 			sourceTree = "<group>";
@@ -126,6 +125,30 @@
 				531A9FE925F4DB820048E64B /* Info.plist */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		531AA00B25F4EB740048E64B /* CellController */ = {
+			isa = PBXGroup;
+			children = (
+				531AA00125F4E48D0048E64B /* ConfigureCell.swift */,
+			);
+			path = CellController;
+			sourceTree = "<group>";
+		};
+		531AA00C25F4EB9B0048E64B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				531AA00425F4E5120048E64B /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		531AA00E25F4EBAB0048E64B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				531A9FFD25F4E4260048E64B /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
